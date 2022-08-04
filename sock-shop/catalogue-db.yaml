@@ -35,6 +35,7 @@ spec:
           containerPort: 3306
         securityContext:
           allowPrivilegeEscalation: false
+
 ---
 apiVersion: v1 # Service - catalogue-db
 kind: Service
