@@ -39,6 +39,7 @@ spec:
             add:
             - NET_BIND_SERVICE
           readOnlyRootFilesystem: true
+          allowPrivilegeEscalation: false
         livenessProbe:
           httpGet:
             path: /health
@@ -51,6 +52,7 @@ spec:
             port: 80
           initialDelaySeconds: 180
           periodSeconds: 3
+
 ---
 apiVersion: v1 # Service - user
 kind: Service
