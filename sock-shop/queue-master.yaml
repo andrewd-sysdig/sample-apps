@@ -30,6 +30,9 @@ spec:
             memory: 300Mi
         ports:
         - containerPort: 80
+        securityContext:
+          allowPrivilegeEscalation: false
+
 ---
 apiVersion: v1 # Service - queue-master
 kind: Service
