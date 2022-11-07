@@ -39,6 +39,7 @@ spec:
             add:
             - NET_BIND_SERVICE
           readOnlyRootFilesystem: true
+          allowPrivilegeEscalation: false
         volumeMounts:
         - mountPath: /tmp
           name: tmp-volume
@@ -46,6 +47,7 @@ spec:
       - name: tmp-volume
         emptyDir:
           medium: Memory
+
 ---
 apiVersion: v1 # Service - Carts
 kind: Service
