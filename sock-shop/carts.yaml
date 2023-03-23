@@ -47,7 +47,7 @@ spec:
         emptyDir:
           medium: Memory
 ---
-apiVersion: v1 # Service - Carts
+apiVersion: v1 # Service - Carts 
 kind: Service
 metadata:
   name: carts
