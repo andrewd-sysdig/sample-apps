@@ -37,6 +37,8 @@ spec:
             - SETGID
             - SETUID
           readOnlyRootFilesystem: true
+          allowPrivilegeEscalation: false
+
 ---
 apiVersion: v1 # Service - session-db
 kind: Service
