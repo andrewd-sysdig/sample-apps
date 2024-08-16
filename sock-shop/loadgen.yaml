@@ -34,3 +34,5 @@ spec:
           requests:
             cpu: 100m
             memory: 50Mi
+        securityContext:
+          readOnlyRootFilesystem: true
